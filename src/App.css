@@ -33,10 +33,10 @@
   display: flex;
   align-items: center;
 }
-.explanation:hover {
+/* .explanation:hover {
   background-color: lemonchiffon;
   padding: 1.4rem;
-}
+} */
 
 img {
   max-width: 75%;

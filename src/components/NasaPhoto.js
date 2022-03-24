@@ -17,19 +17,19 @@ const kf = keyframes`
     transform: scale(1) rotateZ(0)
 }
 `
-const StyledDetails =styled.div`
+const StyledDetails = styled.div`
 transform: scale(5) rotateZ(360deg);
   animation: ${kf} 0.5s ease-in-out forwards;
   background-color: grey;
- 
-   
 `
-// .explanation`
-// &:hover .explanation {
-//       background-color: lemonchiffon;
-//       padding: 1.4rem;
-//   }
-// `
+
+const StyledText = styled.p`
+:hover { 
+    background-color: lemonchiffon;
+    padding: 1.4rem;
+    line-height: 2rem;
+}
+`
 
 const NasaPhoto = (props) => {
     return (
@@ -37,7 +37,7 @@ const NasaPhoto = (props) => {
             <h3>{props.photo.title}</h3>
             <p>{props.photo.date}</p>
             <img src={props.photo.hdurl} />
-            <p className="explanation">{props.photo.explanation}</p>
+            <StyledText className="explanation">{props.photo.explanation}</StyledText>
         </StyledDetails>
     )
 }

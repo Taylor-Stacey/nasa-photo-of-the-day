@@ -33,8 +33,12 @@
   display: flex;
   align-items: center;
 }
+.explanation:hover {
+  background-color: lemonchiffon;
+  padding: 1.4rem;
+}
 
 img {
-  max-width: 80%;
+  max-width: 75%;
   object-fit: cover;
 }
